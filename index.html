@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGROL Agro Serviços</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #4CAF50, #FFA500);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #f4f4f4;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1581093458799-36d6ab7f1f3d');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #FFA500;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AGROL Agro Serviços</h1>
+    <p>Conectando tecnologia e força ao campo</p>
+  </header>
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <section class="hero">
+    <h1>Seja bem-vindo à AGROL</h1>
+    <p>Peças para tratores, roçadeiras, agrimensura, agronomia e muito mais.</p>
+  </section>
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Serviços de Agrônomo</h3>
+        <p>Consultoria especializada para melhorar sua produtividade e manejo.</p>
+      </div>
+      <div class="card">
+        <h3>Agrimensura e Topografia</h3>
+        <p>Mapeamento preciso para projetos rurais, loteamentos e regularização.</p>
+      </div>
+    </div>
+  </section>
+  <section id="produtos">
+    <h2>Produtos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Peças para Tratores</h3>
+        <p>Ampla linha de peças de reposição para tratores diversos.</p>
+      </div>
+      <div class="card">
+        <h3>Roçadeiras</h3>
+        <p>Modelos robustos para pequenos e grandes produtores.</p>
+      </div>
+      <div class="card">
+        <h3>Motosserras</h3>
+        <p>Potentes e duráveis para qualquer tipo de serviço no campo.</p>
+      </div>
+    </div>
+  </section>
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><strong>Telefone:</strong> <a href="tel:+5535991371889">(35) 99137-1889</a></p>
+    <p><strong>Email:</strong> <a href="mailto:fabioluizagrol@gmail.com">fabioluizagrol@gmail.com</a></p>
+  
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria de Fotos</h2>
+    <div class="grid">
+      <div class="card"><img src="https://images.unsplash.com/photo-1600423115367-25ec9c4a05d4" alt="Trator" style="width:100%; border-radius: 8px;"><p>Tratores modernos</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1586953208448-11b3663e4b79" alt="Agrônomo no campo" style="width:100%; border-radius: 8px;"><p>Serviço de agrônomo</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Roçadeira" style="width:100%; border-radius: 8px;"><p>Roçadeiras robustas</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1621841245475-48b4c9c3b3f2" alt="Topografia rural" style="width:100%; border-radius: 8px;"><p>Topografia e agrimensura</p></div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/5535991371889" target="_blank" style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+  ">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="24" height="24" style="background:white; border-radius: 50%;">
+    Fale conosco
+  </a>
+
+    <p>&copy; 2025 AGROL Agro Serviços. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
